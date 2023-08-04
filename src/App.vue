@@ -20,10 +20,10 @@ export default {
     return {
       posts: [
         {
-          id: 1, title: 'Post 1', description: 'Description 1', likes: 0,
+          id: 1, title: 'Изучить vue', description: 'Регулярно програмировать', likes: 0,
         },
         {
-          id: 2, title: 'Post 2', description: 'Description 2', likes: 0,
+          id: 2, title: 'Написать свое приложение', description: 'Которое будет нужно людям', likes: 0,
         },
       ],
       title: '',

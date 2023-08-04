@@ -1,8 +1,8 @@
 <template>
     <div class="post">
         <div class="post__item">
-            <div><strong>Название: {{ itemProps.title }}</strong></div>
-            <div><strong>Описание: {{ itemProps.description }}</strong></div>
+            <div><strong>Что делать: {{ itemProps.title }}</strong></div>
+            <div><strong>Как делать: {{ itemProps.description }}</strong></div>
         </div>
             <my-button @click="deletePost" class="post--delete">Удалить</my-button>
     </div>

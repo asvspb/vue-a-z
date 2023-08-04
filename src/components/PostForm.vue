@@ -1,6 +1,6 @@
 <template>
         <form @submit.prevent class="post-form">
-            <h3>Создать пост</h3>
+            <h3>Создать задачу</h3>
             <div class="wrapper">
                 <input
                     v-model="newPost.title"
@@ -8,14 +8,14 @@
                     type="text"
                     name=""
                     id=""
-                    placeholder="Название">
+                    placeholder="Название задачи">
                 <input
                     v-model="newPost.description"
                     class="input"
                     type="text"
                     name=""
                     id=""
-                    placeholder="Описание">
+                    placeholder="Нужно сделать">
             </div>
             <div class="wrapper wrapper--button">
                 <my-button
