@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <PostItem v-for="item in postsProps" :key="item.id" :itemProps="item" class="post"></PostItem>
+        <PostItem v-for="item in posts" :key="item.id" :itemProps="item" class="post"></PostItem>
     </div>
 </template>
 
@@ -12,7 +12,7 @@ import PostItem from './PostItem.vue';
             PostItem
         },
         props: {
-            postsProps: {
+            posts: {
                 type: Array,
                 required: true
             }

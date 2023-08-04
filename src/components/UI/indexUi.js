@@ -1,4 +1,4 @@
-import MyButton from "./MyButton.vue";
+import MyButton from "@/components/UI/MyButton.vue";
 
 export default [
     MyButton,

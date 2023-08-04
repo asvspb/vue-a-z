@@ -3,7 +3,7 @@
       <PostForm
           @createPostEmiter="createPost"/>
       <PostList
-          :postsProps="posts" />
+          :posts="posts" />
     </div>
 </template>
 
