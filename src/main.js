@@ -16,3 +16,5 @@ componentsUi.forEach(component => {
     App.component(component.name, component)
 })
 
+// проверяем список зарегистрированных компонентов
+console.log(App._context.components)

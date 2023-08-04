@@ -3,7 +3,8 @@
       <PostForm
           @createPostEmiter="createPost"/>
       <PostList
-          :posts="posts" />
+          :posts="posts"
+          @deletePostEmiter="deletePost" />
     </div>
 </template>
 
@@ -30,13 +31,16 @@ export default {
     }
   },
   methods: {
-    createPost(emit) {
+    createPost(post) {
       this.posts.push({
-        id: emit.id,
-        title: emit.title,
-        description: emit.description,
-      })
-      }
+          id: post.id,
+          title: post.title,
+          description: post.description,
+        })
+    },
+    deletePost(id) {
+      this.posts = this.posts.filter(post => post.id !== id)
+    },
   }
 }
 </script>

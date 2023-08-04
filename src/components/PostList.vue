@@ -1,6 +1,12 @@
 <template>
     <div class="wrapper">
-        <PostItem v-for="item in posts" :key="item.id" :itemProps="item" class="post"></PostItem>
+        <PostItem
+            v-for="item in posts"
+            @deletePostEmiter="deletePost"
+            :key="item.id"
+            :itemProps="item"
+            class="post">
+        </PostItem>
     </div>
 </template>
 
@@ -19,6 +25,11 @@ import PostItem from './PostItem.vue';
         },
         data() {
             return {
+            }
+        },
+        methods: {
+            deletePost(id) {
+                this.$emit('deletePostEmiter', id)
             }
         }
     }

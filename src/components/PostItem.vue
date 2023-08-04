@@ -4,7 +4,7 @@
             <div><strong>Название: {{ itemProps.title }}</strong></div>
             <div><strong>Описание: {{ itemProps.description }}</strong></div>
         </div>
-            <my-button class="post--delete">Удалить</my-button>
+            <my-button @click="deletePost" class="post--delete">Удалить</my-button>
     </div>
 </template>
 
@@ -28,6 +28,11 @@ import MyButton from './UI/MyButton.vue'
                     title: '',
                     description: '',
                 }
+            }
+        },
+        methods: {
+            deletePost() {
+                this.$emit('deletePostEmiter', this.itemProps.id)
             }
         }
     }
